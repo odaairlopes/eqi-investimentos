@@ -6,7 +6,7 @@ Esse desafio consiste em uma aplicação front-end para uma simulação de inves
 
 Primeiramente, clone o respositório. Após clonado, entre no diretório do projeto e execute o comando `yarn` ou `npm install`, para instalar as dependências dele.
 
-Após as dependências instaladas, utilize o comando `yarn start` ou `npm start` para executar a aplicação. Ela abrirá em uma nova janela e em `http://localhost:3001`.
+Após as dependências instaladas, utilize o comando `yarn start` ou `npm start` para executar a aplicação. Ela abrirá em uma nova janela e no endereço `http://localhost:3001`.
 
 ### Tecnologias utilizadas
 
