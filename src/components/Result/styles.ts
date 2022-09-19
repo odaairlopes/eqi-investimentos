@@ -6,6 +6,36 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   width: 60%;
+  @media (min-width: 320px) and (max-width: 600px) {
+    padding: 0;
+    background-color: blue;
+    margin-top: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .stack-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 768px) {
+    background-color: turquoise;
+    width: 100%;
+  }
+
+  /* @media (min-width: 769px) {
+    .stack-cards {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  } */
 `;
 
 export const Cards = styled(Paper)`

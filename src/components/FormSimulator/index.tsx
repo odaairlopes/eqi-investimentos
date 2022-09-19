@@ -4,9 +4,15 @@ import {
   Stack,
   ToggleButtonGroup,
   ToggleButton,
-  FormControl,
 } from "@mui/material";
-import { ConfirmButton, Input, Content, CleanButton } from "./styles";
+import {
+  ConfirmButton,
+  Input,
+  Content,
+  CleanButton,
+  Container,
+  Form,
+} from "./styles";
 import { RiInformationLine } from "react-icons/ri";
 import { AiOutlineCheck } from "react-icons/ai";
 import { getIndicators } from "../../services/api";
@@ -47,8 +53,8 @@ const FormSimulator = ({
   };
 
   return (
-    <>
-      <FormControl sx={{ flexDirection: "row", width: "40%" }}>
+    <Container>
+      <Form>
         <Content>
           <Typography variant="h5" fontWeight="bolder" marginBottom="20px">
             Simulador
@@ -102,7 +108,6 @@ const FormSimulator = ({
               InputLabelProps={{ shrink: true }}
             />
           </Stack>
-          <CleanButton type="submit">Limpar campos</CleanButton>
         </Content>
         <Content>
           <Stack
@@ -162,12 +167,15 @@ const FormSimulator = ({
               InputLabelProps={{ shrink: true }}
             />
           </Stack>
-          <ConfirmButton type="submit" onClick={onSubmit}>
-            Simular
-          </ConfirmButton>
         </Content>
-      </FormControl>
-    </>
+      </Form>
+      <Stack className="stack-buttons" gap="1rem">
+        <CleanButton type="submit">Limpar campos</CleanButton>
+        <ConfirmButton type="submit" onClick={onSubmit}>
+          Simular
+        </ConfirmButton>
+      </Stack>
+    </Container>
   );
 };
 
